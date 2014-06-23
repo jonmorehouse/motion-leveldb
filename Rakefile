@@ -11,9 +11,14 @@ rescue LoadError
   require 'motion/project'
 end
 
+
+require 'bundler'
+Bundler.require
+
 # set up bundler
 require 'bundler/setup'
-Bundler.require
+require 'rubygems'
+require 'motion-cocoapods'
 Bundler.require(:development)
 
 # require library
@@ -23,11 +28,11 @@ Motion::Project::App.setup do |app|
   app.name = 'leveldb'
   app.libs += ["/usr/lib/libc++.dylib"]
 
-  # declare pods
+  ## declare pods
   app.pods do
     pod 'Objective-LevelDB'
   end
 end
-App.config.spec_mode = true
+#App.config.spec_mode = true
 
 

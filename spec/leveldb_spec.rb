@@ -8,7 +8,7 @@ describe "Leveldb" do
 
   it "should only create one instance" do
 
-    #1.should.equal 1
+    1.should.equal 1
 
 
   end
