@@ -14,15 +14,20 @@ end
 # set up bundler
 require 'bundler/setup'
 Bundler.setup
+Bundler.require
 Bundler.require(:development)
 
 # require library
 require './lib/leveldb'
 
 Motion::Project::App.setup do |app|
-  # Use `rake config' to see complete project settings.
   app.name = 'leveldb'
+
+  # declare pods
+  app.pods do
+    pod 'Objective-LevelDB'
+  end
 end
-#App.config.spec_mode = true
+App.config.spec_mode = true
 
 

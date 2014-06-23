@@ -12,6 +12,8 @@ When I have time, I'll be rewriting this library to use leveldb from the groundl
 
 http://reality.hk/2012/05/22/create-gems-for-rubymotion/
 
+
+
 ## Features
 
 1. Write queue
@@ -27,5 +29,9 @@ http://reality.hk/2012/05/22/create-gems-for-rubymotion/
   * ability to store a whole file in the database
 5. Push support
   * ability to push keys into a list, not objects, just keys
+6. Ability to get multiple keys to a hash returned
 
+## Implementation
 
+1. Parent class that declares queue
+2. 

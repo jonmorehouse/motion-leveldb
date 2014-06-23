@@ -1,0 +1,6 @@
+vendor/
+build/
+.repl_history
+*gem
+Gemfile.lock
+LiveScratchpad.rb
