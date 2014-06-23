@@ -1,25 +1,25 @@
-module Leveldb
+#module Leveldb
 
-  class Api
+  #class Api
 
-    def initialize(connection)
-      @queue = Dispatch::Queue.new("com.leveldb.database")
-      @conn = connection
-    end
+    #def initialize(connection)
+      #@queue = Dispatch::Queue.new("com.leveldb.database")
+      #@conn = connection
+    #end
 
-    def get(key, &cb)
+    #def get(key, &cb)
 
-    end
+    #end
 
-    def get_keys(keys, &cb)
+    #def get_keys(keys, &cb)
 
-      # create a queue, grab the keys and use async_barrier
+      ## create a queue, grab the keys and use async_barrier
 
-    end
+    #end
 
-    def set(keys, value, &cb)
+    #def set(keys, value, &cb)
 
-    end
+    #end
 
-  end
-end
+  #end
+#end

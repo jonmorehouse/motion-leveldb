@@ -13,7 +13,6 @@ end
 
 # set up bundler
 require 'bundler/setup'
-Bundler.setup
 Bundler.require
 Bundler.require(:development)
 
