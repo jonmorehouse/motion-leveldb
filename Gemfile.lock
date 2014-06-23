@@ -53,6 +53,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  motion-cocoapods (>= 1.4.1)
+  motion-cocoapods
   motion-stump
   rake

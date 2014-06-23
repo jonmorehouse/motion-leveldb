@@ -3,7 +3,7 @@ require './lib/version.rb'
 Gem::Specification.new do |gem|
 
   gem.name = "leveldb"
-  gem.version = leveldb::VERSION
+  gem.version = Leveldb::VERSION
   gem.authors = ["Jon Morehouse"]
   gem.email = ["morehousej09@gmail.com"]
   gem.homepage = "https://github.com/jonmorehouse/motion-leveldb"

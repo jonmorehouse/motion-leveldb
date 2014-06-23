@@ -1,28 +1,12 @@
 # -*- coding: utf-8 -*-
 $:.unshift("/Library/RubyMotion/lib")
+require 'motion/project/template/ios'
 
 begin
-  if ENV['osx']
-    require 'motion/project/template/osx'
-  else
-    require 'motion/project/template/ios'
-  end
+  require 'bundler'
+  Bundler.require
 rescue LoadError
-  require 'motion/project'
 end
-
-
-require 'bundler'
-Bundler.require
-
-# set up bundler
-require 'bundler/setup'
-require 'rubygems'
-require 'motion-cocoapods'
-Bundler.require(:development)
-
-# require library
-require './lib/leveldb'
 
 Motion::Project::App.setup do |app|
   app.name = 'leveldb'
@@ -33,6 +17,3 @@ Motion::Project::App.setup do |app|
     pod 'Objective-LevelDB'
   end
 end
-#App.config.spec_mode = true
-
-
