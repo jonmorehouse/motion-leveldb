@@ -22,6 +22,7 @@ require './lib/leveldb'
 
 Motion::Project::App.setup do |app|
   app.name = 'leveldb'
+  app.libs += ["/usr/lib/libc++.dylib"]
 
   # declare pods
   app.pods do
